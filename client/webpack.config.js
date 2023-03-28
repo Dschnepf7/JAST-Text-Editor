@@ -20,11 +20,11 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template:'./index.html',
-        title: 'JATE'
+        title: 'JATE',
       }),
       new WebpackPwaManifest({
         fingerprints:false,
-        inject: false,
+        inject: true,
         name: 'Jate',
         short_name: 'Jate',
         description: 'Just Another Text Editor!',
